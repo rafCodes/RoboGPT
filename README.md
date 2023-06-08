@@ -9,12 +9,14 @@ We chose to build a robot that can be controlled by ChatGPT to perform various t
 
 This robot takes in speech using Azure Speech Services and converts it to text. This text is then sent to ChatGPT, which generates a response. The response is then sent back to the robot, which performs the task and responds back to the user using Azure Speech Services text-to-speech using a speaker. The sensor data is also sent to ChatGPT so that it can be aware of its surroundings.
 
+A video of the robot in action can be found [here](https://www.youtube.com/watch?v=1sKGEG1GCSM).
+
 ### Note:
 If you are interested in just running the robot core that converts high level requests to low level robot commands without a Raspberry Pi, you can skip the CircuitPython installation step and only use the files in AI_src as they are hardware independent. 
 
 ## Installation instructions
 
-Please see our website, found [here (to be added soon)]() for looking at the full inner working of the robot, testing process, and the circuit diagrams for the hardware.
+Please see our website, found [here](https://courses.ece.cornell.edu/ece5990/ECE5725_Spring2023_Projects/1%20Thursday%20May%2011/6%20AI%20Robot/Lab403Thursday_raf269_rm857/Website/index.html), for looking at the full inner working of the robot, testing process, and the circuit diagrams for the hardware.
 
 This repository uses importlib machinery's SourceFileLoader to avoid having issues with where the code is being run and is set to run in **home/pi/**.
 

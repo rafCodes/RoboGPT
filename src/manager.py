@@ -122,8 +122,8 @@ class manager:
         """ refresh the sensor data with new data """
         startTime = time.time()
 
-        self.forwardDistance = self.front_sensor.getDistance()
-        self.backwardDistance = self.back_sensor.getDistance()
+        self.forwardDistance = self.front_sensor.getDistanceNoWhile()
+        self.backwardDistance = self.back_sensor.getDistanceNoWhile()
 
         if(self.ultrasonic_on):
             print("Took " + str(time.time() - startTime) + " seconds to get ultrasonic data")
