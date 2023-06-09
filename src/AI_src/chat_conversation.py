@@ -112,7 +112,7 @@ class openai_chat:
 
         if self.debug:
             with utils.ColorText("yellow") as colorPrinter:
-                colorPrinter.print(usage)
+                colorPrinter.print(str(usage))
                 colorPrinter.print("Total tokens used: " + str(self.tokens_used))
                 colorPrinter.print("Prompt tokens used: " + str(usage.prompt_tokens))
                 colorPrinter.print("Completion tokens used: " + str(usage.completion_tokens))
