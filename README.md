@@ -5,7 +5,7 @@
 - Rabail Makhdoom
 
 ## Summary
-We chose to build a robot that can be controlled by ChatGPT to perform various tasks like driving around it different shapes or even playing a game with the. The robot is equipped a USB microphone, two ultrasonic sensors, and an accelerometer and gyroscope.
+We chose to build a robot that can be controlled by ChatGPT to perform various tasks like driving around it different shapes or even playing a game with the user. The robot is equipped a USB microphone, two ultrasonic sensors, and an accelerometer and gyroscope.
 
 This robot takes in speech using Azure Speech Services and converts it to text. This text is then sent to ChatGPT, which generates a response. The response is then sent back to the robot, which performs the task and responds back to the user using Azure Speech Services text-to-speech using a speaker. The sensor data is also sent to ChatGPT so that it can be aware of its surroundings.
 
@@ -75,7 +75,7 @@ The python-vlc package was the only audio library that consistently worked with 
 
 ## Software Extras
 
-During our development process, we switched from using the azure-cognitiveservices-speech package to using SpeechRecognition, REST API for text-to-speech, and VLC for audio. This was due to our Raspberry Pi using a 32-Bit OS and the azure-cognitiveservices-speech package requiring a 64-Bit OS and the Micorosoft Visual C++ Redistributiable for Visual Studio, with more information that can be found [here](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/get-started-text-to-speech?pivots=programming-language-python&tabs=windows%2Cterminal).
+During our development process, we switched from using the azure-cognitiveservices-speech package to using Azure Speech Services through SpeechRecognition, REST API for text-to-speech, and VLC for audio playback. This was due to our Raspberry Pi using a 32-Bit OS and the azure-cognitiveservices-speech package requiring a 64-Bit OS and the Microsoft Visual C++ Redistributiable for Visual Studio, with more information about those requirements that can be found [here](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/get-started-text-to-speech?pivots=programming-language-python&tabs=windows%2Cterminal).
 
 You can optionally install it to use the speech_to_text.py and text_to_speech.py that were replaced by rpi_speech_to_text.py and rpi_text_to_speech.py.
 
